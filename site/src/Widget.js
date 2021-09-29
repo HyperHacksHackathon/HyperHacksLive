@@ -9,7 +9,7 @@ function Widget(props) {
             borderRadius: '10px',
             padding: 0
         }} onClick={props.onClick}>
-            <div class="card-body" style={{textAlign: 'left'}} data-toggle="collapse" data-target="#collapseExample">
+            <div class="card-body" style={{textAlign: 'left'}} data-toggle="collapse" data-target={"#" + props.title}>
                     <div class='row'>
                         <div class='col-8'>
                             <h1 class='widget-title'>{props.title}</h1>
@@ -20,7 +20,7 @@ function Widget(props) {
                         </div>
                     </div>
                 </div>
-            <div class="collapse" id="collapseExample">
+            <div class="collapse" id={props.title}>
             {props.children}
             </div>
             {/* {props.children} */}
