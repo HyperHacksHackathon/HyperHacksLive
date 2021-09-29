@@ -10,14 +10,14 @@ function Widget(props) {
             padding: 0
         }} onClick={props.onClick}>
             <div class="card-body" style={{textAlign: 'left'}} data-toggle="collapse" data-target={"#" + props.title}>
-                    <div class='row'>
-                        <div class='col-8'>
-                            <h1 class='widget-title'>{props.title}</h1>
-                            <p class='widget-subtitle'>{props.subtitle}</p>
-                        </div>
-                        <div class='col'>
-                            <h1 class='trailing'><img class='trailing-image' src={props.trailing}></img></h1>
-                        </div>
+                <div class='row'>
+                    <div class='col-8'>
+                        <h1 class='widget-title'>{props.title}</h1>
+                        <p class='widget-subtitle'>{props.subtitle}</p>
+                    </div>
+                    <div class='col'>
+                        <h1 class='trailing'><img class='trailing-image' src={props.trailing}></img></h1>
+                    </div>
                     </div>
                 </div>
             <div class="collapse" id={props.title}>
