@@ -3,13 +3,15 @@
         "title": "Opening Ceremonies",
         "datetime": "2021-10-01T21:00:00Z",
         "location": "Twitch/YouTube",
-        "minutes": "60"
+        "minutes": "60",
+        "description": "Everything you need to know to get started at HyperHacks."
     },
     {
         "title": "Team Building",
         "datetime": "2021-10-01T22:00:00Z",
         "location": "Discord",
-        "minutes": "60"
+        "minutes": "60",
+        "description": "Activities that will help you find a team."
     },
     {
         "title": "Hacking Starts",
@@ -33,25 +35,31 @@
         "title": "Intro to Flutter (Mobile Apps)",
         "datetime": "2021-10-02T13:00:00Z",
         "location": "Twitch/YouTube",
-        "minutes": "60"
+        "minutes": "60",
+        "description": "Beginner Flutter tutorial. Join if you are planning on building a mobile app."
     },
     {
         "title": "Intro to React (Websites)",
         "datetime": "2021-10-02T14:00:00Z",
         "location": "Twitch/YouTube",
-        "minutes": "60"
+        "minutes": "60",
+        "description": "Beginner React tutorial. Join if you are planning on building a website."
+        
     },
     {
         "title": "Game Night!",
         "datetime": "2021-10-02T24:00:00Z",
         "location": "Discord",
-        "minutes": "60"
+        "minutes": "60",
+        "description": "Join us on Discord for some fun games!"
+
     },
     {
         "title": "Cursed Coding Challenge",
         "datetime": "2021-10-03T16:00:00Z",
         "location": "Discord",
-        "minutes": "60"
+        "minutes": "60",
+        "description": "The worst code is the best code in this CCC"
     },
     {
         "title": "Hacking Ends",

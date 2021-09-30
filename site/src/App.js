@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <Nav></Nav>
       <div class='row mt-2 px-3'>
-      <div class='col-md-6'> 
+      <div class='col-md-6'>
       <Widget title='Schedule' subtitle={'Up Next: ' + times[0].item.title} trailing={arrowRight}>
         {
           times.map(item => {
@@ -64,7 +64,10 @@ function App() {
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">{item.item.title}</h5>
+                      <div class='row' style={{margin: 'auto', textAlign: 'center'}}>
+                      <h5 class="modal-title text-center" id="exampleModalLabel"><b>{item.item.title}</b></h5> <br></br>
+                      <p>{item.item.description}</p>
+                      </div>
                     </div>
                     <div class="modal-body">
                       {datestr} <br></br>
@@ -87,8 +90,12 @@ function App() {
       }></Widget>
       </div>
       <div class='col-md-6 py-0'>
-      <Widget title='YouTube' subtitle='Link Coming Soon' trailing={external}></Widget>
-      <Widget title='Twitch' subtitle='Link Coming Soon' trailing={external}></Widget>
+      <Widget title='YouTube' subtitle='Watch Live' trailing={external} onClick={() =>
+        window.open('https://www.youtube.com/channel/UC1ql_UDrZ1SR5Estfjv5zgA')
+      }></Widget>
+      <Widget title='Twitch' subtitle='Watch Live' trailing={external} onClick={() =>
+        window.open('https://www.twitch.tv/hyper_hacks')
+      }></Widget>
       </div>
       </div>
     </div>
