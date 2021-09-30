@@ -4,7 +4,7 @@ function Nav() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">HyperHacks</a>
+        <a class="navbar-brand" href="#">HyperHacks Live</a>
     </div>
     </nav>
   );

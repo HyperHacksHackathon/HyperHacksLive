@@ -4,7 +4,8 @@ import './Widget.css';
 
 function Widget(props) {
   return (
-        <div class="card shadow-lg m-3 pointer" data-target="#collapseExample" style={{
+    <div class='py-2'>
+        <div class="card shadow-lg pointer" data-target="#collapseExample" style={{
             border: 'none',
             borderRadius: '10px',
             padding: 0
@@ -25,6 +26,7 @@ function Widget(props) {
             </div>
             {/* {props.children} */}
         </div>
+    </div>
   );
 }
 

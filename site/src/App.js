@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="App">
       <Nav></Nav>
-      <div class='row'>
-      <div class='col-md-6 py-0'> 
+      <div class='row mt-2 px-3'>
+      <div class='col-md-6'> 
       <Widget title='Schedule' subtitle={'Up Next: ' + times[0].item.title} trailing={arrowRight}>
         {
           times.map(item => {
