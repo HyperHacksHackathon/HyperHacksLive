@@ -15,9 +15,7 @@
     },
     {
         "title": "Hacking Starts",
-        "datetime": "2021-10-01T23:00:00Z",
-        "location": "",
-        "minutes": "0"
+        "datetime": "2021-10-01T23:00:00Z"
     },
     {
         "title": "Expansion 101 with Galicia Gordon",
@@ -63,14 +61,12 @@
     },
     {
         "title": "Hacking Ends",
-        "datetime": "2021-10-03T20:00:00Z",
-        "location": "Discord",
-        "minutes": "0"
+        "datetime": "2021-10-03T20:00:00Z"
     },
     {
         "title": "Closing Ceremonies",
         "datetime": "2021-10-04T01:00:00Z",
-        "location": "Discord",
+        "location": "Twitch/YouTube",
         "minutes": "60"
     }
 ]
