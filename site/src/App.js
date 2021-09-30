@@ -80,7 +80,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <p data-toggle="modal" data-target={"#" + item.item.title}><b>{item.item.title}</b>{' - ' + finalstr}</p>
+              <p class='btn btn-primary' data-toggle="modal" data-target={"#" + item.item.title}><b>{item.item.title}</b>{' - ' + finalstr}</p>
             </div>
           })
         }
