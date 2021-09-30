@@ -16,7 +16,7 @@ function App() {
     }
   });
 
-  times = times.filter(e => e.timeuntil > 0);
+  times = times.filter(e => e.timeuntil > -3600);
 
   times.sort(function (a, b) {
     return a.timeuntil - b.timeuntil;
@@ -26,14 +26,16 @@ function App() {
   return (
     <div className="App">
       <Nav></Nav>
+      <div class='row'>
+      <div class='col-md-6 py-0'> 
       <Widget title='Schedule' subtitle={'Up Next: ' + times[0].item.title} trailing={arrowRight}>
         {
           times.map(item => {
             var timeuntil = item.timeuntil;
-            var d = Math.ceil(timeuntil / (3600*24));
-            var h = Math.floor(timeuntil % (3600*24) / 3600);
-            var m = Math.floor(timeuntil % 3600 / 60);
-            var s = Math.floor(timeuntil % 60);
+            var d = Math.abs(Math.ceil(timeuntil / (3600*24)));
+            var h = Math.abs(Math.floor(timeuntil % (3600*24) / 3600));
+            var m = Math.abs(Math.floor(timeuntil % 3600 / 60));
+            var s = Math.abs(Math.floor(timeuntil % 60));
 
             var timeuntilString = '';
             if (d > 1) {
@@ -43,6 +45,8 @@ function App() {
             } else {
               timeuntilString = m + 'min ' + s + 's'
             }
+
+            timeuntilString = timeuntilString + (timeuntil < 0 ? ' Ago' : ' Away')
 
             var options = { weekday: 'long', hour: 'numeric', minute: 'numeric' }
 
@@ -81,8 +85,12 @@ function App() {
       <Widget title='Discord' subtitle='Join Now' trailing={external} onClick={() =>
         window.open('https://discord.gg/bYBzYV88tZ')
       }></Widget>
+      </div>
+      <div class='col-md-6 py-0'>
       <Widget title='YouTube' subtitle='Link Coming Soon' trailing={external}></Widget>
       <Widget title='Twitch' subtitle='Link Coming Soon' trailing={external}></Widget>
+      </div>
+      </div>
     </div>
   );
 }

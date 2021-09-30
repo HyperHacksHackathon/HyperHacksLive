@@ -20,7 +20,7 @@ function Widget(props) {
                     </div>
                     </div>
                 </div>
-            <div class="collapse p-2" id={props.title}>
+            <div class={"collapse" + (props.children == undefined ? '' : ' p-1')} id={props.title}>
             {props.children}
             </div>
             {/* {props.children} */}
