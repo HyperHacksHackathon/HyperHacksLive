@@ -28,7 +28,6 @@ function App() {
       <Nav></Nav>
       <Widget title='Schedule' subtitle={'Up Next: ' + times[0].item.title} trailing={arrowRight}>
         {
-
           times.map(item => {
             var timeuntil = item.timeuntil;
             var d = Math.ceil(timeuntil / (3600*24));
@@ -45,16 +44,45 @@ function App() {
               timeuntilString = m + 'min ' + s + 's'
             }
 
-            var options = { weekday: 'long', hour: 'numeric', year: 'numeric' }
-            return <p>{item.item.title + ' - ' + timeuntilString}</p>
+            var options = { weekday: 'long', hour: 'numeric', minute: 'numeric' }
+
+            var datestr = new Date(item.item.datetime).toLocaleDateString("en-US", options);
+
+            var finalstr = ''
+
+            finalstr = timeuntilString
+            if (d > 1) {
+              finalstr = new Date(item.item.datetime).toLocaleDateString("en-US", options)
+            }
+
+            return <div>
+              <div class="modal fade" id={item.item.title} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">{item.item.title}</h5>
+                    </div>
+                    <div class="modal-body">
+                      {datestr} <br></br>
+                      {timeuntilString} <br></br>
+                      {item.item.location}
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p data-toggle="modal" data-target={"#" + item.item.title}><b>{item.item.title}</b>{' - ' + finalstr}</p>
+            </div>
           })
         }
       </Widget>
       <Widget title='Discord' subtitle='Join Now' trailing={external} onClick={() =>
         window.open('https://discord.gg/bYBzYV88tZ')
       }></Widget>
-      {/* <Widget title='YouTube' subtitle='Livestream' trailing={external}></Widget> */}
-
+      <Widget title='YouTube' subtitle='Link Coming Soon' trailing={external}></Widget>
+      <Widget title='Twitch' subtitle='Link Coming Soon' trailing={external}></Widget>
     </div>
   );
 }

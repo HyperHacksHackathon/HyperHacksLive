@@ -2,6 +2,67 @@
     {
         "title": "Opening Ceremonies",
         "datetime": "2021-10-01T21:00:00Z",
-        "location": "livestream"
+        "location": "Twitch/YouTube",
+        "minutes": "60"
+    },
+    {
+        "title": "Team Building",
+        "datetime": "2021-10-01T22:00:00Z",
+        "location": "Discord",
+        "minutes": "60"
+    },
+    {
+        "title": "Hacking Starts",
+        "datetime": "2021-10-01T23:00:00Z",
+        "location": "",
+        "minutes": "0"
+    },
+    {
+        "title": "Expansion 101 with Galicia Gordon",
+        "datetime": "2021-10-01T23:00:00Z",
+        "location": "Twitch/YouTube",
+        "minutes": "60"
+    },
+    {
+        "title": "McMaster Engineering Presentation",
+        "datetime": "2021-10-01T24:00:00Z",
+        "location": "Twitch/YouTube",
+        "minutes": "30"
+    },
+    {
+        "title": "Intro to Flutter (Mobile Apps)",
+        "datetime": "2021-10-02T13:00:00Z",
+        "location": "Twitch/YouTube",
+        "minutes": "60"
+    },
+    {
+        "title": "Intro to React (Websites)",
+        "datetime": "2021-10-02T14:00:00Z",
+        "location": "Twitch/YouTube",
+        "minutes": "60"
+    },
+    {
+        "title": "Game Night!",
+        "datetime": "2021-10-02T24:00:00Z",
+        "location": "Discord",
+        "minutes": "60"
+    },
+    {
+        "title": "Cursed Coding Challenge",
+        "datetime": "2021-10-03T16:00:00Z",
+        "location": "Discord",
+        "minutes": "60"
+    },
+    {
+        "title": "Hacking Ends",
+        "datetime": "2021-10-03T20:00:00Z",
+        "location": "Discord",
+        "minutes": "0"
+    },
+    {
+        "title": "Closing Ceremonies",
+        "datetime": "2021-10-04T01:00:00Z",
+        "location": "Discord",
+        "minutes": "60"
     }
 ]
