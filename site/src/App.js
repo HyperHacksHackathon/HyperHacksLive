@@ -85,6 +85,9 @@ function App() {
           })
         }
       </Widget>
+      <Widget title='Judging Guide' subtitle='View' trailing={external} onClick={() =>
+        window.open('http://judging.hyperhacks.org/JudgingGuide.pdf')
+      }></Widget>
       <Widget title='Discord' subtitle='Join Now' trailing={external} onClick={() =>
         window.open('https://discord.gg/bYBzYV88tZ')
       }></Widget>
