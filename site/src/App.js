@@ -93,6 +93,9 @@ function App() {
       }></Widget>
       </div>
       <div class='col-md-6 py-0'>
+      <Widget title='Devpost' subtitle='Link' trailing={external} onClick={() =>
+        window.open('https://hyperhacks.devpost.com')
+      }></Widget>
       <Widget title='YouTube' subtitle='Watch Live' trailing={external} onClick={() =>
         window.open('https://www.youtube.com/channel/UC1ql_UDrZ1SR5Estfjv5zgA')
       }></Widget>
